@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Recipe Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🍽️ Online Recipe Book</h1>
+    <input type="text" id="searchBox" placeholder="Search recipes...">
+  </header>
+
+  <main>
+    <div id="recipeContainer" class="recipe-container"></div>
+  </main>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <img id="popupImage" alt="Recipe Image">
+      <h3>Ingredients</h3>
+      <ul id="popupIngredients"></ul>
+      <h3>Instructions</h3>
+      <p id="popupInstructions"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
